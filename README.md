@@ -1,4 +1,4 @@
-# SBA_Loans: added project files
+# SBA_Loans
 Summary
 Project 2 is to facilitate students practice of the following Data Science concepts:
 
