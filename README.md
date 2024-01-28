@@ -1,4 +1,4 @@
-# SBA Loan Default Analysis, Classification & Feature Engineering, Machine Learning
+# Project 1 : SBA Loan Default Analysis, Classification & Feature Engineering, Machine Learning
 
 •Preprocessed the SBA loan dataset using Python, conducting exploratory analysis, feature engineering, andquantifying feature importance using Shapley values to identify the top 10 influential features.
 
