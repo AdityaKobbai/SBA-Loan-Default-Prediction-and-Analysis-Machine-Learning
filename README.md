@@ -50,12 +50,12 @@ More info on the original dataset: https://www.kaggle.com/mirbektoktogaraev/shou
 
 ## Models
 
-I train and tuneD two types of models:
+I train and tuned two types of models:
 - GBM (H2O)
 - LightGBM. To install LightGBM, run following command from your terminal after activating class virtual environment:  `pip install lightgbm==3.3.5` 
 
 
-I trainsd and tuned 2 models for each task for the total of 2 final models. 
+I trained and tuned 2 models for each task for the total of 2 final models. 
 
 
 First, I split  dataset to Train/Validation/Test, before applying any encodings clean-up or feature engineering.
