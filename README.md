@@ -79,14 +79,13 @@ X_cleaned = encoder.transform(X_dirty)
 ```
 
 ### Feature engineering
-
-You should train/fit categorical features encoders on Train only. Use `transform` or equivalent function on Validation/Test datasets.
+I  train/fitted  categorical features encoders on Train only. Use `transform` or equivalent function on Validation/Test datasets.
 
 It is important to understand all the steps before model training, so that you can reliably replicate and test them to produce scoring function.
 
 
-You should generate various new features. Examples of such features can be seen in the Module-3 lecture on GLMs.
-Your final model should have at least **10** new engineered features. One-hot-encoding, label encoding, and target encoding is not included in the **10** features.
+
+The final model should has **10** new engineered features. One-hot-encoding, label encoding, and target encoding is not included in the **10** features.
 
 Ideas for Feature engineering for various types of variables:
 1. https://docs.h2o.ai/driverless-ai/1-10-lts/docs/userguide/transformations.html
@@ -107,15 +106,13 @@ To simplify scoring, trained single model on provided full dataset with paramete
 
 ## Scoring Function
 
-You only need to submit single scoring function for either GBM or LightGBM model.
 The scoring function will perform the following activities:
 - Accept dataset in the same format as provided with the project, minus "target" column
 - Load trained model and any encoders that are needed to transform data
 - Transform dataset into format that can be scored with the trained model
-- Score the dataset and return the results, for each record in a similar way as in Project 1:
+- Score the dataset and return the results, for each record:
     - Record label as determined by final model
     - You need to assign label based on maximum F1 threshold
-    - Probability 
 
 ```
 index	label	probability_0	probability_1
@@ -126,7 +123,6 @@ index	label	probability_0	probability_1
 5	      0	        0.923460	0.076540
 ```
 
-See Project 1 for more details on scoring function and working example.
 
 ### Threshold calculation
 
@@ -138,12 +134,11 @@ I calculate optimal threshold for class assignment using F1 metric:
 ### Model interpretation
 
 I provided detailed write-up on what features are important for the model predictions and it was  written in "english" and in the way business manager can understand how the model works.
-It minimum include:
+It includes:
 - Shapley summary graph: `shap.plots.beeswarm` 
 - Shapley feature interaction graphs: `shap.plots.scatter` 
 - Multiple examples of single records Shapley graphs with explanations. 
 - Strong/Weak points of the model
-- Are there any scenarios (particular input data) that will require over-write model prediction? 
 
 Resources: https://github.com/slundberg/shap
 
