@@ -93,13 +93,13 @@ Ideas for Feature engineering for various types of variables:
 
 ### Model Tuning
 
-PerformED hyper parameter tuning for both models.
+Performed hyper parameter tuning for both models.
 - Hyper-parameter tuning. The hyper-parameter search space had at least 150 combinations or 150 Optuna trials.
 - To avoid over-fitting and provide reasonable estimate of model performance on hold-out dataset, you will need to split your dataset as following:
     - Train, will be used to train model
     - Validation, will be used to validate model each round of training. Not needed if you perform cross-validation.
     - Testing, will be used to provide final performance metrics, used only once on the final model
-- Feature engineering. You should add at least two engineered features.  For example, add feature which is combination of two features.
+- Feature engineering.  For example, added feature which is combination of two features.
 - Calculate probability threshold to maximize F1.
 
 To simplify scoring, trained single model on provided full dataset with parameters and features found in the Tuning stage.
